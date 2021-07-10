@@ -1,0 +1,52 @@
+// Variables
+
+$primary-colour: #FEC5BB;
+$secondary-colour: #FFFFFF;
+$third-colour: #FAE1DD;
+$main-font-colour: #2F2E41;
+
+$heading-font: 'Fraunces', serif;
+$body-font: 'Barlow', sans-serif;
+
+
+// Reset
+
+:root {
+    font-size: 1em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+// Base Styles
+
+h1, h2, h3 {
+    font-family: $heading-font;
+}
+
+p {
+    font-family: $body-font;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+// Index style
+
+header {
+   padding: 2rem 1rem;
+    text-align: center;
+    background-color: #171e29;
+    color: white;
+}
