@@ -899,69 +899,151 @@
       
             
       <h3 class="page-title white-text teal">Education</h3>
-      <div class="container">
-        <div class="row">
-          <!-- Education -->
-          <div class="col s12 m6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://www.purdue.edu/" target="_blank" class="teal-text hoverline">Purdue University</a></span>
-                </p>
-                <p class="brown-text">Tempe, USA</p>
-                <p>
-                  <b>Degree: </b>Master of Business Analytics and Information Management
-                  <br>
-                  <b>CGPA: </b>3.8/4
-                </p>
+      <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Patient Health Questionnaire (PHQ-9)</title>
+	<link rel="stylesheet" href="./css/main.min.css">
+</head>
 
-                <ul>
-                  <p>
-                    <b>Relevant Courseworks:</b>
-                  <ul>
-                    <li>Machine Learning</li>
-                    <li>Data Mining</li>
-                    <li>Advanced Business Analytics</li>
-                    <li>Production Scale Management</li>
-                    <li>Python and R Programming</li>
-                  </ul>
-                  </p>
+<body>
+	<header>
+		<h1>Patient Health Questionnaire (PHQ-9)</h1>
+	</header>
 
-                </ul>
-              </div>
-            </div>
+	<main>
+		<div class="form-wrapper">
 
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://www.bits-pilani.ac.in/" target="_blank" class="teal-text hoverline">Birla Institute of Technology and Science, Pilani
-                      </a></span>
-                </p>
-                <p class="brown-text">Pilani, India</p>
-                <p>
-                  <b>Degree: </b>Bachelor of Technology in Information Systems
-                  <br>
+			<div class="form-criteria">
+				<div class="form-criteria-text-wrapper">
 
-                </p>
+					<h2 class="form-criteria__text">Not at all</h2>
+					<h2 class="form-criteria__text">Several days</h2>
+					<h2 class="form-criteria__text">More than half the days</h2>
+					<h2 class="form-criteria__text">Nearly every day</h2>
+				</div>
+			</div>
 
-                <ul>
-                  <p>
-                    <b>Relevant Courseworks:</b>
-                  <ul>
-                    <li>Data Structures and Algorithms</li>
-                    <li>Database Management Systems</li>
-                    <li>Operating Systems</li>
-                    <li>Machine Learning</li>
-                    <li>Object Oriented Programming</li>
-                  </ul>
-                  </p>
+			<div id="question1" class="form-question-wrapper">
+				<div class="form-question">
+					<p>1. Little interest or pleasure in doing things</p>
+				</div>
+				<div class="form-question-choices">
+					<p class="form-question-choice">0</p>
+					<p class="form-question-choice">1</p>
+					<p class="form-question-choice">2</p>
+					<p class="form-question-choice">3</p>
+				</div>
+			</div>
 
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+			<div id="question2" class="form-question-wrapper">
+				<div class="form-question">
+					<p>2. Feeling down, depressed, or hopeless</p>
+				</div>
+				<div class="form-question-choices">
+					<p class="form-question-choice">0</p>
+					<p class="form-question-choice">1</p>
+					<p class="form-question-choice">2</p>
+					<p class="form-question-choice">3</p>
+				</div>
+			</div>
+
+			<div id="question3" class="form-question-wrapper">
+				<div class="form-question">
+					<p>3. Trouble falling or staying asleep, or sleeping too much</p>
+				</div>
+				<div class="form-question-choices">
+					<p class="form-question-choice">0</p>
+					<p class="form-question-choice">1</p>
+					<p class="form-question-choice">2</p>
+					<p class="form-question-choice">3</p>
+				</div>
+			</div>
+
+			<div id="question4" class="form-question-wrapper">
+				<div class="form-question">
+					<p>4. Feeling tired or having little energy</p>
+				</div>
+				<div class="form-question-choices">
+					<p class="form-question-choice">0</p>
+					<p class="form-question-choice">1</p>
+					<p class="form-question-choice">2</p>
+					<p class="form-question-choice">3</p>
+				</div>
+			</div>
+
+			<div id="question5" class="form-question-wrapper">
+				<div class="form-question">
+					<p>5. Poor appetite or overeating</p>
+				</div>
+				<div class="form-question-choices">
+					<p class="form-question-choice">0</p>
+					<p class="form-question-choice">1</p>
+					<p class="form-question-choice">2</p>
+					<p class="form-question-choice">3</p>
+				</div>
+			</div>
+
+			<div id="question6" class="form-question-wrapper">
+				<div class="form-question">
+					<p>6. Feeling bad about yourself or that you are a failure or have let yourself or your family down</p>
+				</div>
+				<div class="form-question-choices">
+					<p class="form-question-choice">0</p>
+					<p class="form-question-choice">1</p>
+					<p class="form-question-choice">2</p>
+					<p class="form-question-choice">3</p>
+				</div>
+			</div>
+
+			<div id="question7" class="form-question-wrapper">
+				<div class="form-question">
+					<p>7. Trouble concentrating on things, such as reading the newspaper or watching television</p>
+				</div>
+				<div class="form-question-choices">
+					<p class="form-question-choice">0</p>
+					<p class="form-question-choice">1</p>
+					<p class="form-question-choice">2</p>
+					<p class="form-question-choice">3</p>
+				</div>
+			</div>
+
+			<div id="question8" class="form-question-wrapper">
+				<div class="form-question">
+					<p>8. Moving or speaking so slowly that other people could have noticed. Or the opposite - being so figety or restless that you have been moving around a lot more than usual</p>
+				</div>
+				<div class="form-question-choices">
+					<p class="form-question-choice">0</p>
+					<p class="form-question-choice">1</p>
+					<p class="form-question-choice">2</p>
+					<p class="form-question-choice">3</p>
+				</div>
+			</div>
+
+			<div id="question9" class="form-question-wrapper">
+				<div class="form-question">
+					<p>9. Thoughts that you would be better off dead, or of hurting yourself</p>
+				</div>
+				<div class="form-question-choices">
+					<p class="form-question-choice">0</p>
+					<p class="form-question-choice">1</p>
+					<p class="form-question-choice">2</p>
+					<p class="form-question-choice">3</p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="summary">
+			<h1 id="total">The total is: </h1>
+			<h2 id="severity">Nothing Selected</h2>
+		</div>
+	</main>
+
+
+	<script src="./js/questionnaire.js"></script>
+</body>
     </section>
 
     <!-- Eight Section: Contact -->
