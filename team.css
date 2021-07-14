@@ -58,6 +58,13 @@ p#bruh {
   text-align: justify;
   font-size: 150%;
 }
+p#bruh2 {
+  border-style: solid;
+  border-color: transparent;
+  border-width: 50px;
+  text-align: center;
+  font-size: 150%;
+}
 img#theImage {
   width: 10%;
   height: 10%;
