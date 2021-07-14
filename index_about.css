@@ -58,7 +58,7 @@ p#bruh {
   text-align: justify;
   font-size: 150%;
 }
-p#bruh {
+p#bruh2 {
   border-style: solid;
   border-color: transparent;
   border-width: 50px;
@@ -303,7 +303,7 @@ input[type=text]:focus
 .blank{
   background-color: #032133;
   width:100%;
-  min-height:100%;
+  min-height:25%;
   display:block;
   position:relative;
   float:left
