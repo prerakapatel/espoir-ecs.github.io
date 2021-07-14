@@ -296,7 +296,7 @@ input[type=text]:focus
 .blank{
   background-color: #032133;
   width:100%;
-  min-height:100%;
+  min-height:25%;
   display:block;
   position:relative;
   float:left
