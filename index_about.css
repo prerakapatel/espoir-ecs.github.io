@@ -62,8 +62,8 @@ p#bruh2 {
   border-style: solid;
   border-color: transparent;
   border-width: 50px;
-  text-align: left;
-  font-size: 150%;
+  text-align: center;
+  font-size: 125%;
 }
 img#theImage {
   width: 10%;
