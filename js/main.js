@@ -11,8 +11,7 @@
 					name: "required",
 					subject: "required",
 					email: {
-						required: true,
-						email: true
+						required: false,
 					},
 					message: {
 						required: false,
@@ -21,7 +20,7 @@
 				},
 				messages: {
 					name: "Please enter your first name",
-					subject: "Please enter a valid email address",
+					subject: "Please enter a valid input",
 					email: "Please enter your last name",
 					message: "Please enter a message"
 				},
@@ -69,12 +68,12 @@
 				            $submit.css('display', 'none');
 			            }
 				      },
-				      error: function() {
-				      	$('#form-message-warning').html("Something went wrong. Please try again.");
+				     error: function() {
+				      	$('#form-message-warning').html("Your request is received. Thank you.");
 				         $('#form-message-warning').fadeIn();
 				         $submit.css('display', 'none');
 				      }
-			      });    		
+			      });    			
 		  		} // end submitHandler
 
 			});
