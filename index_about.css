@@ -63,7 +63,7 @@ p#bruh2 {
   border-color: transparent;
   border-width: 50px;
   text-align: center;
-  font-size: 125%;
+  font-size: 150%;
 }
 img#theImage {
   width: 10%;
@@ -89,8 +89,8 @@ a {
 }
 
 img#gm{
-  width: 30%;
-  height: 30%;
+  width: 20%;
+  height: 20%;
   margin-left: auto;
   margin-right: auto;
 }
