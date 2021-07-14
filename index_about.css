@@ -55,8 +55,8 @@ p#bruh {
   border-style: solid;
   border-color: transparent;
   border-width: 50px;
-  text-align: center;
-  font-size: 210%;
+  text-align: justify;
+  font-size: 150%;
 }
 img#theImage {
   width: 10%;
