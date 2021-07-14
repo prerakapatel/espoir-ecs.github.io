@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge;"/>
+        <meta name="theme-color" content="#f7f7f7" />
+        <meta property="og:title" content="Building better mental health" />
+        <meta property="og:type" content="Scorm Module" />
+        <meta property="og:url" content="http://retailmarketing.com/mental-health" />
+        <meta property="og:image:url" content="mental_health.jpg" />
+        <meta property="og:description" content="We’re all on a journey with our mental health. You might be just setting out, or a seasoned pro. Either way, I’m here to prepare you for the ups and downs you might face along the way." />
+        <title>
+            Building better mental health
+        </title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            #loader-cont {
+                position: relative;
+                width: 100vw;
+                height: 100vh;
+                background: #0ebac4 url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%231e939a' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+            }
+            #loader-cont #notice {
+                position: absolute;
+                top: calc(45% + 100px);
+                width:100%;
+                margin: 0;
+                font-family: 'Raleway', sans-serif;
+                text-align:center;
+                color: white;
+            }
+            #loader-cont #notice h1 {
+                font-family: 'Poppins', sans-serif;
+            }
+            #loader.loading {
+                box-sizing:border-box;
+                position: absolute;
+                top: calc(45% - 60px);
+                left: calc(50% - 60px);
+                border: 16px double #f3f3f3;
+                border-top-color: #097d84;
+                border-radius: 50%;
+                width: 120px;
+                height: 120px;
+                -webkit-animation: spin 1.5s linear infinite;
+                animation: spin 1.5s linear infinite;
+            }
+            @-webkit-keyframes spin {
+                0% { -webkit-transform: rotate(0deg); }
+                100% { -webkit-transform: rotate(360deg); }
+            }
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+        </style>
+    <link href="assets/bundle.css" rel="stylesheet"></head>
+    <body>
+        <div id="app-container" >
+            <div id="loader-cont">
+                <div id="loader" class="loading"></div>
+                <div id="notice">
+                    <h1>Just a mo!</h1>
+                    <h2>Your bundle is loading...</h2>
+                </div>
+            </div>
+        </div>
+    <script type="text/javascript" src="assets/bundle.js"></script></body>
+</html>

@@ -1,967 +1,114 @@
-<!-- <!DOCTYPE html> -->
-<html lang="en">
-	    <head>
+<!DOCTYPE html>
+<html>
+  <head>
 	<script type="text/javascript" src="https://widget.instabot.io/jsapi/rokoInstabot.js" crossorigin>
-		apiKey: "5g80jzcR9nrf44PK/M7S/HuxuZLvMRF4mOsXo/zUXD8="
+		apiKey: "uAI8y9XMzq1yMoYp05byXZCZ/vfBEDFe7XNPjtyV41Y="
 	</script>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge;"/>
-        <meta name="theme-color" content="#f7f7f7" />
-        <meta property="og:title" content="Building better mental health" />
-        <meta property="og:type" content="Scorm Module" />
-        <meta property="og:url" content="http://retailmarketing.com/mental-health" />
-        <meta property="og:image:url" content="mental_health.jpg" />
-        <meta property="og:description" content="We’re all on a journey with our mental health. You might be just setting out, or a seasoned pro. Either way, I’m here to prepare you for the ups and downs you might face along the way." />
-        <title>
-            Building better mental health
-        </title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-            }
-            #loader-cont {
-                position: relative;
-                width: 100vw;
-                height: 100vh;
-                background: #0ebac4 url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%231e939a' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
-            }
-            #loader-cont #notice {
-                position: absolute;
-                top: calc(45% + 100px);
-                width:100%;
-                margin: 0;
-                font-family: 'Raleway', sans-serif;
-                text-align:center;
-                color: white;
-            }
-            #loader-cont #notice h1 {
-                font-family: 'Poppins', sans-serif;
-            }
-            #loader.loading {
-                box-sizing:border-box;
-                position: absolute;
-                top: calc(45% - 60px);
-                left: calc(50% - 60px);
-                border: 16px double #f3f3f3;
-                border-top-color: #097d84;
-                border-radius: 50%;
-                width: 120px;
-                height: 120px;
-                -webkit-animation: spin 1.5s linear infinite;
-                animation: spin 1.5s linear infinite;
-            }
-            @-webkit-keyframes spin {
-                0% { -webkit-transform: rotate(0deg); }
-                100% { -webkit-transform: rotate(360deg); }
-            }
-            @keyframes spin {
-                0% { transform: rotate(0deg); }
-                100% { transform: rotate(360deg); }
-            }
-        </style>
-    <link href="assets/bundle.css" rel="stylesheet"></head>
-    <body>
-        <div id="app-container" >
-            <div id="loader-cont">
-                <div id="loader" class="loading"></div>
-                <div id="notice">
-                    <h1>Just a mo!</h1>
-                    <h2>Your bundle is loading...</h2>
-                </div>
-            </div>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="gameweb.css" type="text/css">
+    <script src="gameweb.js" type="text/javascript"></script>
+    <header>
+    	<h1>MENTAL HEALTH</h1>
+    	<p>#BREAKTHESTIGMA</p>
+    </header>
+    <nav id="sticky_nav">
+    	<div class="container_left">
+    		<a class="home" href="index.html"> <!--style="margin:0 auto; display: block;" -->
+    			<img id="homebutton" src="warm6.png">
+    		</a>
+    		<button id="btnMenu" onclick="openMenu()">
+    			<i class="fa fa-bars"></i>
+    			<i class="fa fa-close"></i>
+    		</button>
+    	</div>
+    	<div class="container_menu" id="thisMenu">
+    		<div class="container_list">
+    			<button class="btnList" onclick="openList('1')">
+    				<span class="drop">About Us</span>
+    			</button>
+    			<div class="content_list left" id="thisList_1">
+    				<p><a href="index_about.html" class="button">About</a></p>
+    			</div>
+    		</div>
+    		<div class="container_list">
+    			<button class="btnList" onclick="openList('2')">
+    				<span class="drop">Self Help</span>
+    			</button>
+    			<div class="content_list left" id="thisList_2">
+
+					<p><a target="_blank" rel="noopener noreferrer" href="index_2.html">Interactive Survey</a><br><a href="sch.html">Schedule Appointment</a></p>
+
+    			</div>
+    		</div>
+    		<div class="container_list">
+    			<button class="btnList" onclick="openList('3')">
+    				<span class="drop" id="lala"> Meet The Creators </span>
+    			</button>
+    			<div class="content_list center" id="thisList_3">
+    				<p><a href="team.html">Our Team</a><br></p>
+    			</div>
+    		</div>
+    		<div class="container_list">
+    			<button class="btnList" onclick="openList('4')">
+    				<span class="drop">Take the Survey</span>
+    				<span class="acc">Accordion 4</span>
+    			</button>
+    			<div class="content_list right" id="thisList_4">
+    				<p><a href="phq9.html">PHQ9</a><br><a href="gad7.html">GAD7</a></p>
+    			</div>
+    		</div>
+    		<div class="container_list">
+    			<button class="btnList" onclick="openList('5')">
+    				<span class="drop">Statistics</span>
+    				<span class="acc">Accordion 5</span>
+    			</button>
+    			<div class="content_list right" id="thisList_5">
+    				<p><a href="stat.html">Comapny Statistics</a><br></p>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="container_right">
+    		<div class="content_search" id="thisSearch">
+    			<form><input type="text" placeholder="Search..."></form>
+    		</div>
+    		<button id="btnSearch" onclick="openSearch()">
+    			<i class="fa fa-search"></i>
+    			<i class="fa fa-close"></i>
+    		</button>
+    	</div>
+      <div>
+        <audio id="playlist">
+          <source src="Yuri.mp3" id="mp3Source" type="audio/mpeg" />
+          <source src="howl.mp3" id="mp3Source" type="audio/mpeg" />
+          <source src="killua.mp3" id="mp3Source" type="audio/mpeg" />
+          <source src="gin.mp3" id="mp3Source" type="audio/mpeg" />
+          <source src="rain.mp3" id="mp3Source" type="audio/mpeg" />
+          <source src="river.mp3" id="mp3Source" type="audio/mpeg" />
+          <source src="UT.mp3" id="mp3Source" type="audio/mpeg" />
+          <source src="clair.mp3" id="mp3Source" type="audio/mpeg" />
+          <p>If you are seeing this, the audio player is unsupported in this browser.</p>
+        </audio>
+        <div>
+            <button onclick="document.getElementById('playlist').play()">Play Music</button>
+            <button onclick="document.getElementById('playlist').pause()">Pause</button>
+            <button onclick="document.getElementById('playlist').muted=!document.getElementById('playlist').muted">Mute/Unmute</button>
         </div>
-    <script type="text/javascript" src="assets/bundle.js"></script></body>
+      </div>
+    </nav>
 
-<head>
-	<script type="text/javascript" src="https://widget.instabot.io/jsapi/rokoInstabot.js" crossorigin>
-		apiKey: "5g80jzcR9nrf44PK/M7S/HuxuZLvMRF4mOsXo/zUXD8="
-	</script>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <div class="title">
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
-  <!-- End Google Tag Manager -->
+ 		<h2>Welcome to <span class="teal">Espoir!</span></h2>
 
-  <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-  <!-- Custom Styles-->
-  <link rel="stylesheet" href="/assets/css/style.css" />
-  <title>Espoir | A Mental Health App</title>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126939217-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-126939217-2');
-  </script>
-
-  <!-- Open Graph-->
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Espoir | A Mental Health App" />
-  <meta property="og:description" content="Mental Health App" />
-  <meta property="og:url" content="https://mayankjha-purdue.github.io/" />
-  <meta property="og:site_name" content="Mayank Jha | Software Developer" />
-  <meta property="article:publisher" content="https://espoir-ecs.github.io/" />
-  <meta property="og:image" content="https://espoir-ecs.github.io//examples/preview.JPG" />
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@mayankjha02" />
-  <meta name="twitter:title" content="Coder | Technofreak | Explorer | Minimalist | Humane" />
-  <meta name="twitter:description" content="Software Developer" />
-  <meta name="twitter:url" content="https://twitter.com/mayankjha02" />
-  <meta name="author" content="Mayank Jha" />
-  <meta name="description" content="Software Developer with a passion for backend development and artificial intelligence." />
-  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicon/android-icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="/assets/img/favicon/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="/assets/img/favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
-  <meta name="robots" content="index, follow" />
-  <!-- Google Site Verification for indexing -->
-  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
-</head>
-
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGZH8HT"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
-
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="/assets/img/esp.jpeg" class="circle img-responsive profile-pic" alt="avatar">
-        </a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Company Statistics section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Statistics</span></a>
-      </li>
-
-<!--      <li class="bold">-->
-<!--        &lt;!&ndash; mdi-av-web small-->
-<!--             mdi-av-my-library-books small&ndash;&gt;-->
-<!--        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i-->
-<!--            class="mdi-av-my-library-books small"></i><span>Projects</span></a>-->
-<!--      </li>-->
-
-      <li class="bold">
-        <!--
-        ICONS:
-        mdi-action-assessment
-        mdi-social-poll
-        mdi-av-equalizer
-        -->
-        <a aria-label="Navigate to the Appointment section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Appointment</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        -->
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Take Survey</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        1. mdi-communication-contacts
-        2. mdi-content-mail
-        3. mdi-communication-email
-        -->
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-
-<!--      <li class="bold">-->
-<!--        &lt;!&ndash;-->
-<!--        ICONS:-->
-<!--        1. mdi-action-description-->
-<!--        2. mdi-file-folder-->
-<!--        3. mdi-file-folder-open-->
-<!--        4. mdi-file-attachment-->
-<!--        5. mdi-file-folder-shared-->
-<!--        &ndash;&gt;-->
-<!--        &lt;!&ndash; <a aria-label="Open Mayank's resume in a new tab" href="#resume" target="_blank"-->
-<!--          onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"-->
-<!--          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> &ndash;&gt;-->
-<!--        <a aria-label="Open Mayank's resume in a new tab" href="https://drive.google.com/file/d/1MmKnb_wywJ7UPX-dXDnUtIKr_fW0yXsS/view?usp=sharing" target="_blank"-->
-<!--        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>-->
-<!--      </li>-->
-    </ul>
-  </nav>
-
-  <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Espoir</a><span class="black-text">A Mental Health App</span>
     </div>
-  </nav>
 
-  <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Company Statistics section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Company Statistics</span></a>
-<!--      </li>-->
-<!--      <li class="bold">-->
-<!--        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i-->
-<!--            class="mdi-av-my-library-books small"></i><span>Projects</span></a>-->
-<!--      </li>-->
-      <li class="bold">
-        <a aria-label="Navigate to the Appointment section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Appointment</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Take Survey section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Take Survey</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-<!--      <li class="bold">-->
-<!--        <a aria-label="Open Mayank's Resume in a new tab"-->
-<!--          href="https://drive.google.com/file/d/1MmKnb_wywJ7UPX-dXDnUtIKr_fW0yXsS/view?usp=sharing" target="_blank"-->
-<!--          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>-->
-<!--      </li>-->
-    </ul>
-  </nav>
-
-  <!-- Main Content-->
-  <main>
-    <!-- First Section: Heading lines and image -->
-    <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Welcome to <span class="teal">Espoir!</span></h2>
-              <h5 style="color:#fff">An App against Depression for  <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
-              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <h5>Espoir is an app built for the future of the workplace. We believe that in today’s fast paced world, coupled with the unpredictability of events, mental health should take a bigger position in our list of priorities.</h5>
-            </div>
-            <div class="social">
-<!--              <a href="http://linkedin.com/in/mayank-jha-34479154" target="_blank">-->
-<!--                <button class="icon-btn linkedin">-->
-<!--                  <i class="fa fa-linkedin"></i>-->
-<!--                </button>-->
-<!--              </a>-->
-<!--              <a href="https://github.com/mayankjha-purdue/" target="_blank">-->
-<!--                <button class="icon-btn github">-->
-<!--                  <i class="fa fa-github"></i>-->
-<!--                </button>-->
-<!--              </a>-->
-
-<!--              <a href="https://angel.co/u/mayank_jha" target="_blank">-->
-<!--                <button class="icon-btn angellist">-->
-<!--                  <i class="fa fa-angellist"></i>-->
-<!--                </button>-->
-<!--              </a>-->
-
-              <!-- <a href="http://linkedin.com/in/mayank-jha-34479154" target="_blank">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-
-                  </span>
-              </a> -->
-            </div>
-            <div class='buttons'>
-              <a href="#about" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Second Section: About -->
-    <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
-      <div class="container flow-text">
-        <!-- <blockquote>
-          <h2>
-            A Software Developer with a passion for Backend Development and Artificial Intelligence.
-
-          </h2>
-        </blockquote> -->
-        <p>
-
-	COVID-19 has taken a toll on the world in countless ways, and while rebuilding and restoration is afoot across the globe, there remain certain facets of an average work environment that may require continued efforts to recognize and rectify. The post- pandemic workplace is rife with employees burdened with variants of depression, anxiety and stress that affect their day-to-day productivity, and overall quality of life. A variety of different studies have found that employees were more likely to seek help with stress, anxiety, and depression now than they were five years ago. For instance, 91% of employees surveyed believed that their employers should care about their emotional health, and 85% said that behavioural health benefits were important when evaluating a new job. 45% of Americans felt that the COVID-19 crisis is harming their mental health, while 19% felt that it is having a “major impact”.1 In such an environment, we introduce ESPOIR, based on the Patient Health Questionnaire 9 (PHQ9)2 and the General Anxiety Disorder 7 (GAD7),3 to help individuals self-assess their mental well-being, as well as provides various tools to help combat similar issues.
-
-          <!-- Detail-oriented Software Engineer with a get-it-done, on-time, and high-quality product spirit and a keen interest in Software Development and Artificial Intelligence. -->
-        </p>
-        <!-- <p>
-          Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.
-        </p> -->
-        <!-- <p>
-          Another Paragraph
-        </p>  -->
-        <!-- <p>
-        <strong>Current Focus</strong>:&nbsp;<a aria-label="Navigate to the Inclusive Design Patterns homepage"
-          href="https://www.smashingmagazine.com/inclusive-design-patterns/">Accessibility</a>&nbsp;//&nbsp;<a
-          aria-label="Navigate to the Full Stack React homepage"
-          href="https://www.fullstackreact.com/">React</a>&nbsp;//&nbsp;<a
-          aria-label='Navigate to the article "Scalable CSS"'
-          href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/">Design Systems</a>
-        </p> -->
-      </div>
-    </section>
-
-
-    <!-- Third Section: Experience -->
-    <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text teal">Company Statistics</h3>
-      <div class="container">
-
-        <div class='tableauPlaceholder' id='viz1624574613819' style='position: relative'><noscript><a href='#'><img alt='Depression Status ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;De&#47;DepressionStatus&#47;Sheet5&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DepressionStatus&#47;Sheet5' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;De&#47;DepressionStatus&#47;Sheet5&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1624574613819');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-
-        <div class='tableauPlaceholder' id='viz1624574734338' style='position: relative'><noscript><a href='#'><img alt='Anxiety Status ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnxietyStatus&#47;Sheet52&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AnxietyStatus&#47;Sheet52' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnxietyStatus&#47;Sheet52&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1624574734338');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-
-      </div>
-    </section>
-
-<!--    &lt;!&ndash; Fourth Section: Projects &ndash;&gt;-->
-<!--    <section id="projects" class="section scrollspy">-->
-<!--      <h3 class="page-title white-text teal">Projects</h3>-->
-<!--      <div class="container">-->
-<!--        <div class="row">-->
-
-<!--          <div class="col s12 m6 l6">-->
-<!--            <div class="card medium">-->
-<!--              <div class="card-image waves-effect waves-block waves-light">-->
-<!--                <img alt="music streaming app" src="/assets/img/project-music-player.png" style="height: 100%; width: 100%" class="activator" />-->
-<!--              </div>-->
-<!--              <div class="card-content">-->
-<!--                <span class="card-title activator teal-text hoverline">Music Player Web-App<i-->
-<!--                    class="mdi-navigation-more-vert right"></i></span>-->
-<!--                <p>-->
-<!--                  A music streaming web app based on Django-->
-<!--                </p>-->
-<!--              </div>-->
-<!--              <div class="card-reveal">-->
-<!--                &lt;!&ndash; TODO: change this &#45;&#45; only close button &ndash;&gt;-->
-<!--                &lt;!&ndash; <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> &ndash;&gt;-->
-<!--                <span class="card-title grey-text"><small>Accomplishments</small><i-->
-<!--                    class="mdi-navigation-close right"></i></span>-->
-<!--                <ul>-->
-<!--                  <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, AWS S3, Heroku</li>-->
-<!--                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>-->
-<!--                  <li>Search and filter songs based on language and singer.</li>-->
-<!--                  <li>Create multiple playlists and add/remove songs to/from playlist.</li>-->
-<!--                  <li>Scroll through recently played/viewed songs.</li>-->
-
-
-<!--                </ul>-->
-<!--                <div class="card-action">-->
-<!--                  <a aria-label="Visit " href="https://galvanic-music.herokuapp.com/" target="_blank" data-position="top"-->
-<!--                    data-tooltip="View Online"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-external-link"></i></a>-->
-<!--                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/mayankjha-purdue/music-player"-->
-<!--                    target="_blank" data-position="top" data-tooltip="View Source"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-github"></i></a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--          <div class="col s12 m6 l6">-->
-<!--            <div class="card medium">-->
-<!--              <div class="card-image waves-effect waves-block waves-light">-->
-<!--                <img alt="quiz app" src="/assets/img/project-quizup-logo-1.png" style="height: 100%; width: 100%" class="activator" />-->
-<!--              </div>-->
-<!--              <div class="card-content">-->
-<!--                <span class="card-title activator teal-text hoverline">Quiz Web-App<i-->
-<!--                    class="mdi-navigation-more-vert right"></i></span>-->
-<!--                <p>-->
-<!--                  A quiz playing web app based on Django-->
-<!--                </p>-->
-<!--              </div>-->
-<!--              <div class="card-reveal">-->
-<!--                &lt;!&ndash; TODO: change this &#45;&#45; only close button &ndash;&gt;-->
-<!--                &lt;!&ndash; <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> &ndash;&gt;-->
-<!--                <span class="card-title grey-text"><small>Accomplishments</small><i-->
-<!--                    class="mdi-navigation-close right"></i></span>-->
-<!--                <ul>-->
-<!--                  <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, Heroku</li>-->
-<!--                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>-->
-<!--                  <li>Play Quiz and see the leaderboard</li>-->
-
-<!--                </ul>-->
-<!--                <div class="card-action">-->
-<!--                  <a aria-label="Visit " href="https://quiz-up-app.herokuapp.com/" target="_blank" data-position="top"-->
-<!--                    data-tooltip="View Online"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-external-link"></i></a>-->
-<!--                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/mayankjha-purdue/QuizUp"-->
-<!--                    target="_blank" data-position="top" data-tooltip="View Source"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-github"></i></a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--          &lt;!&ndash; 1. Django Project &ndash;&gt;-->
-<!--          &lt;!&ndash; <div class="col s12 m6 l6">-->
-<!--            <div class="card medium">-->
-<!--              <div class="card-image waves-effect waves-block waves-light">-->
-<!--                <img alt="django web app" src="/assets/img/project-library-logo.png" style="height: 100%; width: 100%" class="activator" />-->
-<!--              </div>-->
-<!--              <div class="card-content">-->
-<!--                <span class="card-title activator teal-text hoverline">Local Library Web-App<i-->
-<!--                    class="mdi-navigation-more-vert right"></i></span>-->
-<!--                <p>-->
-<!--                  A web-app that creates an online catalog for a small local library, where users can browse available books and manage their accounts.-->
-<!--                </p>-->
-<!--              </div>-->
-<!--              <div class="card-reveal">-->
-<!--                <span class="card-title grey-text"><small>Accomplishments</small><i-->
-<!--                    class="mdi-navigation-close right"></i></span>-->
-<!--                <ul>-->
-<!--                  <li><b>Tools:</b> HTML, CSS, Bootstrap, SQLite, Django, Heroku</li>-->
-<!--                  <li>Users can view list and detail information for books and authors.</li>-->
-<!--                  <li>Admin users can create and manage models.</li>-->
-<!--                  <li>Librarians can renew reserved books.</li>-->
-
-<!--                </ul>-->
-<!--                <div class="card-action">-->
-<!--                  <a aria-label="Visit " href="https://django-local-lib.herokuapp.com" target="_blank" data-position="top"-->
-<!--                    data-tooltip="View Online"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-external-link"></i></a>-->
-<!--                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/mayankjha-purdue/django-local-library"-->
-<!--                    target="_blank" data-position="top" data-tooltip="View Source"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-github"></i></a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div> &ndash;&gt;-->
-
-<!--          &lt;!&ndash; Flask Project &ndash;&gt;-->
-<!--          <div class="col s12 m6 l6">-->
-<!--            <div class="card medium">-->
-<!--              <div class="card-image waves-effect waves-block waves-light">-->
-<!--                <img alt="Screenshot of web app" src="/assets/img/project-blog-logo.jpg"-->
-<!--                style="height: 100%; width: 100%" class="activator" />-->
-<!--              </div>-->
-<!--              <div class="card-content">-->
-<!--                <span class="card-title activator teal-text hoverline">Blog Web-App<i-->
-<!--                    class="mdi-navigation-more-vert right"></i></span>-->
-<!--                <p>-->
-<!--                  A simple and extensible blog web-app based on Flask.-->
-<!--                </p>-->
-<!--              </div>-->
-<!--              <div class="card-reveal">-->
-<!--                &lt;!&ndash; TODO: change this &#45;&#45; only close button &ndash;&gt;-->
-<!--                &lt;!&ndash; <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> &ndash;&gt;-->
-<!--                <span class="card-title teal-text"><small>Accomplishments</small><i-->
-<!--                    class="mdi-navigation-close right"></i></span>-->
-<!--                <ul>-->
-<!--                  <li><b>Tools:</b> HTML, CSS, Bootstrap, Flask, SQLAlchemy, Postgresql, Python</li>-->
-<!--                  <li>Users can view posts and contact the admin via Contact Page.</li>-->
-<!--                  <li>Admin can Add, Delete, Update posts.</li>-->
-
-
-<!--                </ul>-->
-<!--                <div class="card-action">-->
-<!--                  <a aria-label="Visit Blog website" href="https://flask-heroku-blog.herokuapp.com/" target="_blank" data-position="top"-->
-<!--                    data-tooltip="View Online"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-external-link"></i></a>-->
-<!--                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/mayankjha-purdue/flask-blog"-->
-<!--                    target="_blank" data-position="top" data-tooltip="View Source"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-github"></i></a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--          &lt;!&ndash; VQA &ndash;&gt;-->
-<!--          <div class="col s12 m6 l6">-->
-<!--            <div class="card medium">-->
-<!--              <div class="card-image waves-effect waves-block waves-light">-->
-<!--                <img alt="Screenshot of  web app" src="/assets/img/project-aim_bert-bias.png" style="height: 100%; width: 100%" class="activator" />-->
-<!--              </div>-->
-<!--              <div class="card-content">-->
-<!--                <span class="card-title activator teal-text hoverline">Visual Question Answering<i-->
-<!--                    class="mdi-navigation-more-vert right"></i></span>-->
-<!--                <p>-->
-<!--                  An attention-based classification model that aims at generating an answer for a given input image.-->
-<!--                </p>-->
-<!--              </div>-->
-<!--              <div class="card-reveal">-->
-<!--                &lt;!&ndash; TODO: change this &#45;&#45; only close button &ndash;&gt;-->
-<!--                &lt;!&ndash; <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> &ndash;&gt;-->
-<!--                <span class="card-title teal-text"><small>Accomplishments</small><i-->
-<!--                    class="mdi-navigation-close right"></i></span>-->
-<!--                <ul>-->
-<!--                  <li>Incorporated Convolution Neural Networks (CNN) for extracting image features and Long Short Term-->
-<!--                    Memory for extracting question-->
-<!--                    embeddings.</li>-->
-<!--                  <li>Tested the model on the COCO dataset, abstract scenes images, and got 69% overall accuracy on the-->
-<!--                    VQA evaluation metric.</li>-->
-
-<!--                </ul>-->
-<!--                <div class="card-action">-->
-<!--                  <a aria-label="Visit the GitHub repo for  project"-->
-<!--                    href="https://github.com/mayankjha-purdue/visual-question-answering" target="_blank"-->
-<!--                    data-position="top" data-tooltip="View Source"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-github"></i></a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--          &lt;!&ndash; Video Summarizer &ndash;&gt;-->
-<!--          <div class="col s12 m6 l6">-->
-<!--            <div class="card medium">-->
-<!--              <div class="card-image waves-effect waves-block waves-light">-->
-<!--                <img alt="Screenshot of  web app" src="/assets/img/computer-vision-v2-04.png" style="height: 100%; width: 100%" class="activator" />-->
-<!--              </div>-->
-<!--              <div class="card-content">-->
-<!--                <span class="card-title activator teal-text hoverline">Video Summarizer<i-->
-<!--                    class="mdi-navigation-more-vert right"></i></span>-->
-<!--                <p>-->
-<!--                  A Seq2Seq model that generates a short summary of the given input video.-->
-<!--                </p>-->
-<!--              </div>-->
-<!--              <div class="card-reveal">-->
-<!--                &lt;!&ndash; TODO: change this &#45;&#45; only close button &ndash;&gt;-->
-<!--                &lt;!&ndash; <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> &ndash;&gt;-->
-<!--                <span class="card-title brown-text"><small>Accomplishments</small><i-->
-<!--                    class="mdi-navigation-close right"></i></span>-->
-<!--                <ul>-->
-<!--                  <li>Incorporated CNN to detect and classify objects in the video frames and Long Short Term Memory for-->
-<!--                    generating a summary.</li>-->
-<!--                  <li>Evaluated the model on MSVD (Microsoft Video Description Corpus) dataset; achieved 0.77, 0.71,-->
-<!--                    0.52 scores respectively on ROGUE,-->
-<!--                    BLEU, METEOR evaluation metrics.</li>-->
-
-<!--                </ul>-->
-<!--                &lt;!&ndash; TODO: UPLOAD THIS PROJECT ON GITHUB &ndash;&gt;-->
-<!--                <div class="card-action">-->
-<!--                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/mayankjha-purdue/"-->
-<!--                    target="_blank" data-position="top" data-tooltip="View Source"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-github"></i></a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--          &lt;!&ndash; Image Generator &ndash;&gt;-->
-<!--          <div class="col s12 m6 l6">-->
-<!--            <div class="card medium">-->
-<!--              <div class="card-image waves-effect waves-block waves-light">-->
-<!--                <img alt="Screenshot of  web app" src="/assets/img/gan.jpg" style="height: 100%; width: 100%" class="activator" />-->
-<!--              </div>-->
-<!--              <div class="card-content">-->
-<!--                <span class="card-title activator teal-text hoverline">Image Generator<i-->
-<!--                    class="mdi-navigation-more-vert right"></i></span>-->
-<!--                <p>-->
-<!--                  An image generator based on the concept of adversarial networks (GANs)-->
-<!--                </p>-->
-<!--              </div>-->
-<!--              <div class="card-reveal">-->
-<!--                &lt;!&ndash; TODO: change this &#45;&#45; only close button &ndash;&gt;-->
-<!--                &lt;!&ndash; <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> &ndash;&gt;-->
-<!--                <span class="card-title brown-text"><small>Accomplishments</small><i-->
-<!--                    class="mdi-navigation-close right"></i></span>-->
-<!--                <ul>-->
-<!--                  <li>Developed system was tested on a human-face database and loss was calculated by comparing the PCAs-->
-<!--                    of generated and original image.</li>-->
-<!--                  <li>Calculated difference in PCA was less than 10%, depicting the successful generation of an image by-->
-<!--                    the generator.</li>-->
-
-<!--                </ul>-->
-<!--                <div class="card-action">-->
-<!--                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/mayankjha-purdue/"-->
-<!--                    target="_blank" data-position="top" data-tooltip="View Source"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-github"></i></a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--          &lt;!&ndash; Head Counting System &ndash;&gt;-->
-<!--          <div class="col s12 m6 l6">-->
-<!--            <div class="card medium">-->
-<!--              <div class="card-image waves-effect waves-block waves-light">-->
-<!--                <img alt="Screenshot of  web app" src="/assets/img/Blog-Images-Forget-Machine-Learning-Humans-Still-Have-a-Lot-to-Learn-Part-II.jpg" style="height: 100%; width: 100%" class="activator" />-->
-<!--              </div>-->
-<!--              <div class="card-content">-->
-<!--                <span class="card-title activator teal-text hoverline">Head Counting System<i-->
-<!--                    class="mdi-navigation-more-vert right"></i></span>-->
-<!--                <p>-->
-<!--                  A system that calculates the attendance of the class from a panoramic image of a live classroom.-->
-<!--                </p>-->
-<!--              </div>-->
-<!--              <div class="card-reveal">-->
-<!--                &lt;!&ndash; TODO: change this &#45;&#45; only close button &ndash;&gt;-->
-<!--                &lt;!&ndash; <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> &ndash;&gt;-->
-<!--                <span class="card-title brown-text"><small>Accomplishments</small><i-->
-<!--                    class="mdi-navigation-close right"></i></span>-->
-<!--                <ul>-->
-<!--                  <li>Used Singular Value Decomposition for image compression; applied various image processing-->
-<!--                    techniques and morphological operations to-->
-<!--                    detect the number of heads.</li>-->
-
-<!--                </ul>-->
-<!--                <div class="card-action">-->
-<!--                  <a aria-label="Visit the GitHub repo for  project"-->
-<!--                    href="https://github.com/mayankjha-purdue/visual-question-answering" target="_blank"-->
-<!--                    data-position="top" data-tooltip="View Source"-->
-<!--                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i-->
-<!--                      class="fa fa-github"></i></a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--          &lt;!&ndash; ************* &ndash;&gt;-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </section>-->
-
-    <!-- Fifth Section: Skills -->
-    <section id="skills" class="section scrollspy">
-      <h3 class="page-title white-text teal">Book Appointment</h3>
-      <head>
-  <title>DoctorSahab</title>
-  <link rel="stylesheet" type="text/css" href="Homestyle.css"/>
-</head>
-<body>
-
-<div class="topnav">
-   <img src="imgs/1.jpg" align="left" width="250" >
-   <a href="#phase" align="center"><font size="6">Book Emergency</font></a>
-   <a href="Remedies.html" align="center"><font size="6">Home Remedies</font></a>
-   <a href="#doc" align="center"><font size="6">Find doctor</font></a>
-   <a class="active" href="#" align="center"><font size="6">Home </font></a>
-</div>
-
-
-<video style="margin-top: 10px;" width="100%" preload="auto" autoplay="true" loop="loop" muted="muted">
-<source src="vids/DNA.mp4" type="video/mp4">
-video is not supported
-</video>
-
-
-<div class="phase1" id="phase">
-  <center>
-    <a href="#doc" class="button" id="left">Find a Doctor</a>
-    <a href="Emergency.html" class="button" id="right">Book an Emergency</a>
-  </center>
-</div>
-<div class="doctors" id="doc">
-  <center>
-    <p class="docheading">Select The Category of Doctors</p>
-    <table class="doc_menu" cellspacing="30px">
-      <tr>
-        <td><a class="doc_link" href="Doctors.html">Child Specialist</a></td>
-        <td><a class="doc_link" href="Doctors.html">Dentist</a></td>
-        <td><a class="doc_link" href="Doctors.html">Skin Specialist</a></td>
-      </tr>
-      <tr>
-        <td><a class="doc_link" href="Doctors.html">Dietitian</a></td>
-        <td><a class="doc_link" href="Doctors.html">Eye Specialist</a></td>
-        <td><a class="doc_link" href="Doctors.html">Heart Specialist</a></td>
-      </tr>
-      <tr>
-        <td><a class="doc_link" href="Doctors.html">Neurologist</a></td>
-        <td><a class="doc_link" href="Doctors.html">Bone and Joint Specialist</a></td>
-        <td><a class="doc_link" href="Doctors.html">Physiotherapist</a></td>
-      </tr>
-    </table>
-  </center>
-</div>
-<div class="about">
-  <center>
-    <p title="About Us" class="info">
-      We are a team of Inspired people who are here to bring a change in the world.<br/>
-      This project is a part of our Dream to change the world.<br/>
-      Healthcare sector is a major part of our society, but it has failed to achieve the digitalization in this era.<br/>
-      So we decided to take a stand and connect Patients to Doctors and Hospitals to give patients an easy solution for all their Health Problems.<br/>
-    </p>
-  </center>
-</div>
-
-</body>
-    </section>
-
-    <!-- Seventh Section: Education -->
-    <section id="education" class="section scrollspy">
-
-
-      <h3 class="page-title white-text teal">Take Survey</h3>
-      <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Patient Health Questionnaire (PHQ-9)</title>
-	<link rel="stylesheet" href="./css/main.min.css">
-</head>
-
-<body>
-	<header>
-		<h1>Patient Health Questionnaire (PHQ-9)</h1>
-	</header>
-
-	<main>
-		<div class="form-wrapper">
-
-			<div class="form-criteria">
-				<div class="form-criteria-text-wrapper">
-
-					<h2 class="form-criteria__text">Not at all</h2>
-					<h2 class="form-criteria__text">Several days</h2>
-					<h2 class="form-criteria__text">More than half the days</h2>
-					<h2 class="form-criteria__text">Nearly every day</h2>
-				</div>
-			</div>
-
-			<div id="question1" class="form-question-wrapper">
-				<div class="form-question">
-					<p>1. Little interest or pleasure in doing things</p>
-				</div>
-				<div class="form-question-choices">
-					<p class="form-question-choice">0</p>
-					<p class="form-question-choice">1</p>
-					<p class="form-question-choice">2</p>
-					<p class="form-question-choice">3</p>
-				</div>
-			</div>
-
-			<div id="question2" class="form-question-wrapper">
-				<div class="form-question">
-					<p>2. Feeling down, depressed, or hopeless</p>
-				</div>
-				<div class="form-question-choices">
-					<p class="form-question-choice">0</p>
-					<p class="form-question-choice">1</p>
-					<p class="form-question-choice">2</p>
-					<p class="form-question-choice">3</p>
-				</div>
-			</div>
-
-			<div id="question3" class="form-question-wrapper">
-				<div class="form-question">
-					<p>3. Trouble falling or staying asleep, or sleeping too much</p>
-				</div>
-				<div class="form-question-choices">
-					<p class="form-question-choice">0</p>
-					<p class="form-question-choice">1</p>
-					<p class="form-question-choice">2</p>
-					<p class="form-question-choice">3</p>
-				</div>
-			</div>
-
-			<div id="question4" class="form-question-wrapper">
-				<div class="form-question">
-					<p>4. Feeling tired or having little energy</p>
-				</div>
-				<div class="form-question-choices">
-					<p class="form-question-choice">0</p>
-					<p class="form-question-choice">1</p>
-					<p class="form-question-choice">2</p>
-					<p class="form-question-choice">3</p>
-				</div>
-			</div>
-
-			<div id="question5" class="form-question-wrapper">
-				<div class="form-question">
-					<p>5. Poor appetite or overeating</p>
-				</div>
-				<div class="form-question-choices">
-					<p class="form-question-choice">0</p>
-					<p class="form-question-choice">1</p>
-					<p class="form-question-choice">2</p>
-					<p class="form-question-choice">3</p>
-				</div>
-			</div>
-
-			<div id="question6" class="form-question-wrapper">
-				<div class="form-question">
-					<p>6. Feeling bad about yourself or that you are a failure or have let yourself or your family down</p>
-				</div>
-				<div class="form-question-choices">
-					<p class="form-question-choice">0</p>
-					<p class="form-question-choice">1</p>
-					<p class="form-question-choice">2</p>
-					<p class="form-question-choice">3</p>
-				</div>
-			</div>
-
-			<div id="question7" class="form-question-wrapper">
-				<div class="form-question">
-					<p>7. Trouble concentrating on things, such as reading the newspaper or watching television</p>
-				</div>
-				<div class="form-question-choices">
-					<p class="form-question-choice">0</p>
-					<p class="form-question-choice">1</p>
-					<p class="form-question-choice">2</p>
-					<p class="form-question-choice">3</p>
-				</div>
-			</div>
-
-			<div id="question8" class="form-question-wrapper">
-				<div class="form-question">
-					<p>8. Moving or speaking so slowly that other people could have noticed. Or the opposite - being so figety or restless that you have been moving around a lot more than usual</p>
-				</div>
-				<div class="form-question-choices">
-					<p class="form-question-choice">0</p>
-					<p class="form-question-choice">1</p>
-					<p class="form-question-choice">2</p>
-					<p class="form-question-choice">3</p>
-				</div>
-			</div>
-
-			<div id="question9" class="form-question-wrapper">
-				<div class="form-question">
-					<p>9. Thoughts that you would be better off dead, or of hurting yourself</p>
-				</div>
-				<div class="form-question-choices">
-					<p class="form-question-choice">0</p>
-					<p class="form-question-choice">1</p>
-					<p class="form-question-choice">2</p>
-					<p class="form-question-choice">3</p>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="summary">
-			<h1 id="total">The total is: </h1>
-			<h2 id="severity">Nothing Selected</h2>
-		</div>
-	</main>
-
-
-	<script src="./js/questionnaire.js"></script>
-</body>
-    </section>
-
-    <!-- Eight Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
-            <h3 class="page-title white-text teal">Meet Us</h3>
-      <div class="container">
-        <!-- Languages and Databases -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Our Team</h4>
-            <div class="row text-center">
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/mayank.jpg" class="responsive-img" />Mayank
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/prerak.png" class="responsive-img" />Prerak
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/sandeep.png" class="responsive-img" />Sandeep
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/usama.png" class="responsive-img" />Usama
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/sakshee.png" class="responsive-img" />Sakshee
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/anisha.png" class="responsive-img" />Anisha
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/snigdha.png" class="responsive-img" />Snigdha
-              </div>
-            </div>
-          </div>
-        </div>
-    </section>
-  </main>
-
-  <!-- typed.js -->
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["Employers", "Employees", "Future Workplace"],
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
-    });
   </script>
 
+    <div class="blank">
 
-  <!-- jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <p id="bruh">
 
-  <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-  <script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
-  </script>
-</body>
-
-</html>
+      </p>
+    </div>
+  </head>
+  </html>

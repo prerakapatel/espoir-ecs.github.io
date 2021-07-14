@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="aboutcourtney.css" type="text/css">
+    <script src="jade.js"></script>
+    <!-- <script src="gameweb.js" type="text/javascript"></script>-->
+
+<!-- Navigation Bar -->
+</head>
+
+<body>
+
+  <div class="container_left">
+    <a class="home" href="index.html"> <!--style="margin:0 auto; display: block;" -->
+      <img id="homebutton" src="warm6.png">
+    </a>
+    <button id="btnMenu" onclick="openMenu()">
+      <i class="fa fa-bars"></i>
+      <i class="fa fa-close"></i>
+    </button>
+  </div>
+  <div class="container_menu" id="thisMenu">
+    <div class="container_list">
+      <button class="btnList" onclick="openList('1')">
+        <span class="drop">Mental Health</span>
+      </button>
+      <div class="content_list left" id="thisList_1">
+        <p><a href="mentalhealthinfo.html" class="button">About</a></p>
+      </div>
+    </div>
+    <div class="container_list">
+      <button class="btnList" onclick="openList('2')">
+        <span class="drop">Inspiration</span>
+      </button>
+      <div class="content_list left" id="thisList_2">
+        <p><a href="wit.html">Kim Swift</a><br>
+        <a href="https://girlswhocode.com/" class="button" target = "_blank">Girls Who Code</a></p>
+      </div>
+    </div>
+    <div class="container_list">
+      <button class="btnList" onclick="openList('3')">
+        <span class="drop" id="lala"> Meet The Creators </span>
+      </button>
+      <div class="content_list center" id="thisList_3">
+        <p><a href="aboutcourtney.html">Courtney Ng</a><br><a href="about_maz.html">Mazal Zebak</a><br><a href="jade.html">Jade Shen</a></p>
+      </div>
+    </div>
+    <div class="container_list">
+      <button class="btnList" onclick="openList('4')">
+        <span class="drop">About The Game</span>
+        <span class="acc">Accordion 4</span>
+      </button>
+      <div class="content_list right" id="thisList_4">
+        <p><a href="info.html">Information</a><br><a href="cause.html">Our Cause</a></p>
+      </div>
+    </div>
+    <div class="container_list">
+      <button class="btnList" onclick="openList('5')">
+        <span class="drop">Credits</span>
+        <span class="acc">Accordion 5</span>
+      </button>
+      <div class="content_list right" id="thisList_5">
+        <p><a href="artist.html">The Artist</a><br><a href="help.html">Helpers</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="container_right">
+    <div class="content_search" id="thisSearch">
+      <form><input type="text" placeholder="Search..."></form>
+    </div>
+    <button id="btnSearch" onclick="openSearch()">
+      <i class="fa fa-search"></i>
+      <i class="fa fa-close"></i>
+    </button>
+  </div>
+  <div>
+    <audio id="playlist">
+      <source src="killua.mp3" id="mp3Source" type="audio/mpeg" />
+      <source src="gin.mp3" id="mp3Source" type="audio/mpeg" />
+      <source src="rain.mp3" id="mp3Source" type="audio/mpeg" />
+      <source src="river.mp3" id="mp3Source" type="audio/mpeg" />
+      <source src="UT.mp3" id="mp3Source" type="audio/mpeg" />
+      <source src="clair.mp3" id="mp3Source" type="audio/mpeg" />
+      <p>If you are seeing this, the audio player is unsupported in this browser.</p>
+    </audio>
+    <div>
+        <button onclick="document.getElementById('playlist').play()">Play Music</button>
+        <button onclick="document.getElementById('playlist').pause()">Pause</button>
+        <button onclick="document.getElementById('playlist').muted=!document.getElementById('playlist').muted">Mute/Unmute</button>
+    </div>
+  </div>
+</body>
+
+          <!-- Links -->
+          <div class="me">
+          	<span id="right"><a href="https://www.instagram.com/courtneyy_ngg/" target="blank_"><img src="insta.png" alt = "Instagram"></a></span>
+            <span id="left"><a href="https://www.facebook.com/yentruocgn" target="blank_"><img src="fb.png" alt = "Facebook"></a></span>
+            <span id="center"><a href="https://www.linkedin.com/in/courtney-ng-829895169/" target="blank_"><img src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/linkedin_circle-512.png" alt = "LinkedIn"></a></span>
+          </div>
+<!-- Text Starts -->
+
+  <div class = "title">
+    <header>
+      <h1> Courtney Ng </h1>
+      <p> Meet the Creators </p>
+    </header>
+  </div>
+  <div class="blank">
+    <div> <!-- o -->
+      <!-- lololo things i want to cover kinda
+            -jrotc
+            -games
+            -piano -->
+      <p id="about">Courtney is a junior in Francis Lewis High School. She is very enthusiastic about the Computer Science field  due to her exposure and love for video games as well as growing up around the internet. She is very involved in her school's Patriot Battlion for Junior Reserve Officer Training Corps (JROTC) and is learning about leadership and teamwork. Some of her other hobbies include playing the piano and photography.
+          <br><br>
+          Courtney and two others created "Warm" to as a way to advocate for mental health. As a young adult growing up with a lot of cognizance and information about mental health she believes in spreading knowledge and awareness about the issue. By creating this game she hopes to achieve spreaing awareness and that it will educate other people about mental health issues.
+          <br><br>
+      </p>
+      <img id = "court" src = "court2.jpg" alt = "Courtney image">
+      <p id= "cont1"> courtney.ng81@gmail.com </p>
+      <p id= "cont2"> Send me an email if you have any inquiries. </p>
+      <br>
+
+    </div> <!-- o -->
+
+  </div>
+
+</html>
